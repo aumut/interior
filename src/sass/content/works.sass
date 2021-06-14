@@ -1,0 +1,250 @@
+.our-works
+  color: #525252
+  //font-size: 18px
+  line-height: 1.5
+  margin-bottom: 33px
+
+  .container
+    padding: 0 23px 0 37px
+    +tablet-down
+      padding: 0 5px
+  .row
+    +phone-down
+      margin-left: -5px
+      margin-right: -5px
+
+  .section-title
+    margin-bottom: 70px
+    +tablet-down
+      margin-bottom: 30px
+  .title
+    margin-bottom: 14px
+    font-size: 30px
+    line-height: 1
+    +tablet-down
+      font-size: 18px
+      width: 90%
+      line-height: 1.5
+
+  .subtitle
+    max-width: 75%
+    +tablet-down
+      line-height: 1.7
+      min-width: 100%
+      margin-bottom: 35px
+
+  .note
+    font-size: 14px
+    line-height: 1.57
+    position: relative
+    +tablet-down
+      padding-left: 25px
+
+    &:before
+      content: ''
+      display: inline-block
+      +bg-image(18px, 22px, transparent, "../images/icons/bookmark.svg", cover)
+      position: absolute
+      left: -29px
+      top: 2px
+      +tablet-down
+        left: 0
+
+  .works
+    margin-bottom: 32px
+    +phone-down
+      margin-left: -5px
+      margin-right: -5px
+    .row
+      //max-height: 336px
+      margin-bottom: 36px
+      &:last-child
+        margin-bottom: 0
+
+    .image-wrapper
+      position: relative
+      overflow: hidden
+      max-width: fit-content
+      margin: 0 auto
+      +phone-down
+        max-width: unset
+      img
+        width: 100%
+      &:hover .image-caption
+        display: none
+
+      .image-caption
+        position: absolute
+        text-transform: uppercase
+        color: #ffffff
+        font-family: $font-HistoryPro-Two
+        font-size: 20px
+        line-height: 1.5
+        z-index: 10
+        width: 60%
+        left: 50px
+        bottom: 10px
+        +laptop-down
+          font-size: 14px
+        +tablet-down
+          font-size: 16px
+
+        &--large
+          width: 75%
+
+        &--small
+          width: 25%
+
+      &.top-left
+        .image-caption
+          bottom: unset
+          top: 12px
+          left: 42px
+
+      &.bottom-right
+        .image-caption
+          left: unset
+          right: 10px
+
+.about-works
+  color: #1d1c2e
+  //display: flex
+  margin: 0 auto
+  text-align: center
+  text-transform: uppercase
+  font-family: $font-Roboto-Regular
+  line-height: 1.5
+  +tablet-down
+    line-height: 1.8
+
+  .about-works-text-23px
+    font-size: 23px
+    +tablet-down
+      font-size: 19px
+
+  .about-works-text-50px
+    font-size: 50px
+    line-height: 1
+    +tablet-down
+      font-size: 30px
+
+  .about-works-text-24px
+    font-size: 24px
+    +tablet-down
+      font-size: 18px
+      line-height: 1.5
+
+  .about-works-text-17px
+    font-size: 17px
+    line-height: 1
+    text-transform: none
+    +tablet-down
+      font-size: 15px
+      line-height: 1.5
+
+.work-hover-block.active
+  opacity: 1
+  transform: translate(0, 0)
+  +tablet-down
+    width: 100%
+    left: 0px
+
+.work-hover-block
+  position: absolute
+  background-color: rgba(#000, .7)
+  top: 0
+  left: 15px
+  right: 15px
+  bottom: 0
+  z-index: 100
+  display: flex
+  justify-content: center
+  align-items: center
+  color: #ffffff
+  text-align: center
+  line-height: 1.375
+  opacity: 0
+  transform: translate(-40%, -40%)
+  transition: all 0.6s
+  font-size: 20px
+  +laptop-down
+    font-size: 12px
+  +tablet-down
+    font-size: 16px
+
+  .content
+    max-width: 230px
+
+    .hover-title-wrapper
+      margin-bottom: 40px
+      +laptop-down
+        margin-bottom: 20px
+
+    .btn
+      background: #ffc087
+      color: $blueblack2
+      border-radius: 25px
+      width: 100%
+      padding: 10px
+      margin-bottom: 35px
+      +laptop-down
+        font-size: 12px
+        padding: 5px
+        margin-bottom: 20px
+      +tablet-down
+        font-size: 16px
+        padding: 10px
+
+.works-slider
+  margin-bottom: 30px
+  .image-wrapper
+    img
+      width: 100%
+      height: fit-content
+
+
+.tns-outer
+  .tns-nav
+    display: flex
+    justify-content: center
+    button
+      display: inline-block
+      padding: 5px
+      width: 5px
+      height: 5px
+      border: 1.5px solid #FFFFFF
+      border-radius: 50%
+      background-color: #c6c6c6
+      margin-right: 10px
+      &:last-child
+        margin-right: 0
+      +phone-down
+        width: 3px
+        height: 3px
+        padding: 3px
+        margin-right: 6px
+
+      &.tns-nav-active
+        background-color: $lightbrown_2
+        border-color: $lightbrown_2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

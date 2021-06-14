@@ -1,0 +1,185 @@
+.hero
+  width: 100%
+  min-height: 107vh
+  color: #fff
+  overflow: hidden
+  background:
+    image: url("../images/content/bg_hero.jpg")
+    repeat: no-repeat
+    size: cover
+
+  .content
+    .container
+      padding: 0 52px
+      +laptop-down
+        padding: 0 20px 50px
+
+    .wrapper
+      flex-wrap: nowrap
+      +tablet-down
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+  h1.title
+    color: #ffffff
+    text-transform: uppercase
+    margin-bottom: 9px
+    +tablet-down
+      font-size: 18px
+      line-height: 1.8
+
+  .subtitle
+    color: $grey
+    font-size: 18px
+    line-height: 1.4
+    padding-right: 270px
+    padding-left: 3px
+    margin-bottom: 65px
+    +tablet-down
+      font-size: 14px
+      padding-right: 0
+      margin-bottom: 50px
+
+.lightbrown-text
+  color: $lightbrown_1
+
+.content__col--left
+  max-width: 790px
+  margin-right: 100px
+  +laptop-down
+    margin-right: 20px
+  +tablet-down
+    margin-right: 0
+
+.advantages
+  padding-right: 181px
+  +laptop-down
+    padding-right: 75px
+  +tablet-down
+    padding-right: 0
+  .row
+    margin-bottom: 30px
+    .col2 .advantage-item
+      padding-right: 25px
+
+  .advantage-item
+    font-size: 16px
+    line-height: 1.25
+    //padding-left: 50px
+    padding: 0 0px 0 54px
+    position: relative
+    +tablet-down
+      font-size: 12px
+      padding: 0 10px 0 25px
+    &:before
+      content: ''
+      display: inline-block
+      width: 30px
+      height: 30px
+      border-radius: 50%
+      background:
+        color: $lightbrown_1
+        image: url("../images/icons/check-mark.svg")
+        repeat: no-repeat
+        position: center
+        size: 50%
+      //+bg-image(30px, 30px, $lightbrown_1, "../images/icons/check-mark.svg", contain)
+      position: absolute
+      top: 0
+      left: 0px
+      +tablet-down
+        width: 20px
+        height: 20px
+
+  .smile
+    position: relative
+    &:after
+      content: ''
+      display: inline-block
+      position: absolute
+      left: 171px
+      top: 40px
+      +bg-image(20px, 20px, transparent, "../images/icons/wink.svg", cover)
+      +tablet-down
+        display: none
+
+.content__col--right
+  display: flex
+  //justify-content: center
+  align-items: center
+  padding-top: 107px
+  flex-direction: column
+  +tablet-down
+    padding-top: 0
+.caption
+  font-size: 16px
+  line-height: 1.3
+  margin-bottom: 81px
+  position: relative
+  &:before
+    content: ''
+    display: inline-block
+    width: 65px
+    height: 50px
+    position: absolute
+    right: 6px
+    top: 45px
+    background:
+      image: url("../images/icons/key.png")
+      position: center
+      repeat: no-repeat
+      size: contain
+
+.mission
+  color: $black2
+  font-size: 14px
+  line-height: 1.3
+  font-family: $font-Roboto-Regular
+
+.pentagon
+  background: #ffffff
+  padding: 20px 40px 0
+  width: 170px
+  position: relative
+  transform: translateY(-10px)
+  &:before
+    content: ''
+    display: inline-block
+    width: 0px
+    height: 0
+    border-top: 45px solid #ffffff
+    border-left: 85px solid transparent
+    border-right: 85px solid transparent
+    position: absolute
+    left: 0
+    bottom: -44px
+
+.pentagon.mission-wrapper
+  width: 184px
+  padding: 0 7px
+  background: rgba(255,255,255, .3)
+  &:before
+    border-top-color: rgba(255,255,255, .3)
+    border-left: 92px solid transparent
+    border-right: 92px solid transparent
+    bottom: -45px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

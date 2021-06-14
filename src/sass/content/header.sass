@@ -1,0 +1,172 @@
+.header
+  font-family: $font-Roboto-Light
+  color: #ffffff
+  margin-bottom: 145px
+  position: relative
+  +tablet-down
+    margin-bottom: 50px
+  +phonemin-down
+    padding-right: 5px
+
+  .header-row
+    padding: 0 22px 0 13px
+    +tablet-down
+      padding-left: 10px
+      padding-right: 10px
+
+.logo
+  width: 175px
+  height: 134px
+  //background: $logo_bg
+  border-bottom-right-radius: 14px
+  background: rgb(87,67,64)
+  background: linear-gradient(90deg, rgba(87,67,64,1) 0%, rgba(88,68,64,1) 51%, rgba(87,68,63,1) 100%)
+  position: relative
+  font-size: 24px
+  line-height: 1.13
+  //color: #ffffff
+  font-family: $font-UniNeueBook
+  text-align: left
+  padding: 14px 42px
+  +tablet-down
+    width: 116px
+    height: 116px
+    font-size: 18px
+    padding: 10px 20px
+    line-height: 1.5
+
+  &:before
+    content: ''
+    display: inline-block
+    width: 0
+    height: 0px
+    border-top: 25px solid $logo_bg
+    border-right: 165px solid transparent
+    border-bottom-left-radius: 14px
+    position: absolute
+    bottom: -25px
+    left: 0
+    +tablet-down
+      border-right: 108px solid transparent
+      bottom: -24px
+
+span.logo-span
+  display: inline-block
+  margin-bottom: 8px
+  &:last-child
+    margin-left: 10px
+
+.big-text.logo-span
+  color: #f2a704
+  font-size: 60px
+  line-height: 27px
+  font-family: $font-UniNeueBlack
+
+.logo-descr
+  font-size: 14px
+  line-height: 1.36
+  +tablet-down
+    font-size: 12px
+    line-height: 1.58
+    max-width: 142px
+    position: absolute
+    top: -16px
+    left: calc(50% - 71px)
+  +phonemin-down
+    max-width: 123px
+    font-size: 10px
+    left: calc(50% - 60px)
+
+
+  color: $lightgrey
+  width: 175px
+  padding-top: 28px
+  margin-left: 22px
+
+.col--right
+  padding-top: 14px
+  align-items: flex-start
+  +tablet-down
+    flex-direction: column-reverse
+    align-items: flex-end
+
+.contact_wrapper
+  text-align: right
+  margin-right: 14px
+  +tablet-down
+    margin-right: 0
+    margin-top: 30px
+  +phone-down
+    display: flex
+    flex-direction: column
+
+  p
+    font-size: 14px
+    line-height: 1.4
+    color: #999999
+  .our_phone
+    font-family: $font-HistoryPro-Two
+    font-size: 20px
+    line-height: 1.35
+    position: relative
+    //color: #ffffff
+    &:before
+      content: ''
+      display: inline-block
+      width: 17px
+      height: 20px
+      position: absolute
+      top: 8px
+      left: -25px
+      background-image: url("../images/icons/phone.svg")
+      background-color: transparent
+      background-size: contain
+      background-repeat: no-repeat
+
+
+  .callBack
+    display: block
+    color: $lightbrown_1
+    cursor: pointer
+    font-size: 14px
+    line-height: 2
+    text-decoration: underline
+    font-family: $font-Roboto-Regular
+
+.menu_wrapper
+  padding: 4px 8px 31px
+  border: 1px solid #9a9a9a
+  cursor: pointer
+  position: relative
+
+  .menu-title
+    font-size: 16px
+    line-height: 1.69
+    margin-bottom: 0
+
+  .menu-icon
+    display: inline-block
+    width: 40px
+    height: 3px
+    position: absolute
+    right: 11px
+    top: 40px
+
+    background: $menu_brown
+    text-align: right
+
+    &:before, &:after
+      content: ''
+      display: inline-block
+      width: 40px
+      height: 3px
+      background: $menu_brown
+      position: absolute
+      top: -9px
+      right: 0
+
+    &:after
+      top: 8px
+      background: $menu_brown
+      width: 26px
+
